@@ -1,0 +1,11 @@
+a:hover{
+    color:red ;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+#login:hover {
+    background: orangered;
+    color: beige;
+}

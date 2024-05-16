@@ -1,0 +1,77 @@
+#box {
+    flex: 1 1 150px;
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.img img {
+    height: 200px;
+    width: 250px;
+}
+
+#box .info .title {
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+#box .info .sub-info {
+    padding: 15px 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#box .info .sub-info .price {
+    color: #ff3300;
+    font-size: 15px;
+}
+
+#box .info .sub-info .price span {
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+#box .info .sub-info .stars {
+    color: orange;
+    font-size: 15px;
+}
+
+#box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 223px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+    transform: scale(0);
+}
+
+#box:hover .overlay {
+    transform: scale(1);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#box .overlay i {
+    color: #666;
+    background: #fff;
+    margin: 10px;
+    font-size: 25px;
+    transform: translateY(-150%);
+    transition: all .1s ease-in;
+    transition-property: transform;
+    transition-delay: calc(.1s * var(--i));
+}
+
+#box .overlay i:hover {
+    color: orange;
+}
+
+#box:hover .overlay i {
+    transform: translateY(0%);
+}

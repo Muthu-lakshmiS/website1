@@ -1,0 +1,11 @@
+a {
+    color: ;
+    font-size: larger;
+}
+img{
+    width: 600px;
+    height: 350px;
+}
+#start:hover {
+    color: red;
+}
